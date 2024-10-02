@@ -1,6 +1,5 @@
 # Prueba Golang
-<!-- 
-La prueba está dividida en varias secciones con distintos enfoques. Aquí te guiaré en cómo abordar cada una de ellas utilizando Golang y buenas prácticas de desarrollo. -->
+
 
 ## 1. Problemas de diseño – 1 punto
 
@@ -109,6 +108,8 @@ func main() {
 
 
 ### Le agregaria CQRS
+
+> **NOTA:** La arquitectura mostrada me parece muy buena, pero en caso de buscar mayor escalabilidad y eficiencia, propondría esta arquitectura.
 
 ##### ¿Por qué implementar CQRS?
 Implementar CQRS permite separar las operaciones de lectura y escritura, optimizando el rendimiento al evitar la competencia por recursos entre ambas. Usar una base de datos de lectura, como Elasticsearch o una base de datos NoSQL, facilita la creación de vistas especializadas para consultas rápidas y complejas, uniendo múltiples entidades en un solo registro. Esto mejora la escalabilidad, ya que puedes ajustar las capacidades de lectura y escritura de manera independiente. Las bases de datos de lectura se pueden escalar horizontalmente mediante la adición de nodos, permitiendo gestionar grandes volúmenes de datos y consultas sin afectar la base de datos de escritura, que permanece optimizada para transacciones.
