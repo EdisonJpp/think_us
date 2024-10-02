@@ -104,8 +104,7 @@ func main() {
 
 ## 4. Aprendizaje – 1 punto
 
-***La arquitectura mostrada utiliza un API Gateway que dirige las solicitudes de clientes hacia microservicios independientes (Catalog, Shopping Cart, Discount, Ordering), cada uno con su propia base de datos. El Message Broker facilita la comunicación asíncrona entre estos microservicios, permitiendo que trabajen de forma desacoplada y escalable.***
-
+La arquitectura mostrada utiliza un API Gateway que dirige las solicitudes de clientes hacia microservicios independientes (Catalog, Shopping Cart, Discount, Ordering), cada uno con su propia base de datos. El Message Broker facilita la comunicación asíncrona entre estos microservicios, permitiendo que trabajen de forma desacoplada y escalable.
 
 ### Le agregaria CQRS
 
